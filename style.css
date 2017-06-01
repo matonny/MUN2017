@@ -95,6 +95,6 @@
 .c-main__button:focus{
 	outline: none;
 }
-.c-main__link{
-
+.about{
+	height: 500px;
 }
