@@ -1,0 +1,100 @@
+.header{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	padding: 0 20px;
+}
+.header__container{
+	display: flex;
+	max-width: 1000px;
+	margin:0 auto;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 70px;
+}
+.header__logo{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 22px;
+	float: left;
+	display: block;
+}
+.header__list{
+	display: flex;
+	list-style-type: none;
+}
+.header__list__item{
+	display: inline-block;
+	float: left;
+	padding: 5px;
+}
+.header__list__link{
+	color: white;
+	text-decoration: none;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.header__list__link:hover{
+	color:#761735;
+}
+.main{
+	background-image: url('images/background-image.jpg');
+	height: 660px;
+	background-size: cover;
+
+}
+.c-main{
+	height: 100%;
+	background: rgba(0,0,0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.c-main__content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.c-main__title{
+	color:white;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin:20px 0;
+}
+.c-main__subtitle{
+	color: white;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: normal;
+	font-size: 1.8rem;
+	line-height: 2rem;
+}
+.c-main__button{
+	width:120px;
+	height: 40px;
+	border: 1px solid #761735;
+	background-color: #761735;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'Rajdhani', sans-serif;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.c-main__button:hover{
+	background-color: rgba(0,0,0, 0.0);
+	border:1px solid white;
+}
+.c-main__button:focus{
+	outline: none;
+}
+.c-main__link{
+
+}
