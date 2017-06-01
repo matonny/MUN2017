@@ -117,6 +117,7 @@
 	font-weight: 300;
 	color: #761735;
 	text-transform: uppercase;
+	margin: 100px 0;
 }
 .about__features{
 	display: flex;
