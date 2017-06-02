@@ -27,9 +27,9 @@
 	position: absolute;
 	right: 20px;
 	top: 10px;
-	height: 25px;
-	width: 25px;
-	background-color: white;
+	height: 32px;
+	width: 32px;
+	background-image: url("images/nav-icon.png");
 	color: transparent;
 }
 .header__nav {
