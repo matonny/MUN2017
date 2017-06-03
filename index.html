@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link href='style.css' rel='stylesheet'/>
 	<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,600" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 	<title>GDNMUN</title>
 </head>
 <body>
@@ -56,12 +57,12 @@
     	<section class='home' id='home'>
     		<div class='home__container'>
     			<div class='home__content'>
-    				<h1 class='home__title'>
+    				<h2 class='home__title'>
     					Gdańsk Model United Nations 2017
-    				</h1>
-    				<h2 class='home__subtitle'>
-    					Road to freedom
     				</h2>
+    				<h3 class='home__subtitle'>
+    					Road to freedom
+    				</h3>
     			</div>
     		</div>
     	</section>
@@ -73,7 +74,7 @@
 				</h2>
 				<div class='section__features'>
 					<div class='section__item'>
-						<i class="fa fa-question-circle fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-question-circle fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							What is GDNMUN?
 						</h3>
@@ -82,17 +83,17 @@
 						</p>
 					</div>
 					<div class='section__item'>
-						<i class="fa fa-calendar-check-o fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-calendar-check-o fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							When?
 						</h3>
 						<p class='item__description'>
-							7 - 9<br/>
+							<time datetime='2017-11-07'>7</time>  - <time datetime='2017-11-09'>9</time><br/>
 							October 2017
 						</p>
 					</div>
 					<div class='section__item'>
-						<i class="fa fa-map-marker fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-map-marker fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							Where?
 						</h3>
@@ -108,7 +109,7 @@
 				</h2>
 				<div class='section__features'>
 					<div class='section__item'>
-						<i class="fa fa-users fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-users fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							Secretariat
 						</h3>
@@ -117,7 +118,7 @@
 						</p>
 					</div>
 					<div class='section__item'>
-						<i class="fa fa-money fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-money fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							Sponsors
 						</h3>
@@ -126,7 +127,7 @@
 						</p>
 					</div>
 					<div class='section__item'>
-						<i class="fa fa-newspaper-o fa-3x icon" aria-hidden="true"></i>
+						<span class="fa fa-newspaper-o fa-3x icon" aria-hidden="true"></span>
 						<h3 class='item__title'>
 							Media
 						</h3>
@@ -142,7 +143,7 @@
 				</h2>
 				<div class='section__features'>
 					<div class='section__item smaller__item'>
-						<i class="fa fa-3x fa-list-ul icon" aria-hidden='true'></i>
+						<span class="fa fa-3x fa-list-ul icon" aria-hidden='true'></span>
 						<h3 class='item__title'>
 							Comittees
 						</h3>
@@ -151,7 +152,7 @@
 						</p>
 					</div>
 					<div class='section__item smaller__item'>
-						<i class="fa fa-3x fa-calendar icon" aria-hidden='true'></i>
+						<span class="fa fa-3x fa-calendar icon" aria-hidden='true'></span>
 						<h3 class='item__title'>
 							Schedule
 						</h3>
@@ -160,7 +161,7 @@
 						</p>
 					</div>
 					<div class='section__item smaller__item'>
-						<i class="fa fa-3x fa-file-text icon" aria-hidden='true'></i>
+						<span class="fa fa-3x fa-file-text icon" aria-hidden='true'></span>
 						<h3 class='item__title'>
 							Documents
 						</h3>
@@ -169,7 +170,7 @@
 						</p>
 					</div>
 					<div class='section__item smaller__item'>
-						<i class="fa fa-3x fa-money icon" aria-hidden='true'></i>
+						<span class="fa fa-3x fa-money icon" aria-hidden='true'></span>
 						<h3 class='item__title'>
 							Fees
 						</h3>
@@ -192,7 +193,31 @@
 
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://use.fontawesome.com/93f552f4ab.js"></script>
 	<script src='javascript.js'></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "Gdansk Model United Nations 2017",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gdańsk",
+            "postalCode": "80-863",
+            "streetAddress": "Pl. Solidarności 1",
+            "addressCountry": "PL"
+          },
+          "name": "European Solidarity Centre",
+          "url": "http://www.ecs.gda.pl/"
+        },
+        "startDate": "2017-10-7",
+        "image": "http://summit.meetjs.pl/2017/images/meetjs-schema.png",
+        "description": "meet.js Summit is a conference that gathers 450 professional front-end developers interested in JavaScript development (covering topics like MVC, Node.js, reactive programming, frameworks like Angular or React etc.)",
+        "endDate": "2017-10-9",
+        "url": "http://summit.meetjs.pl/2017/",
+        "sameAs": "https://www.facebook.com/gdnmun/"
+      }
+</script>
 </body>
 </html>

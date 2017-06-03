@@ -44,25 +44,6 @@ body{
 	transition: height 0.5s ease-in-out;
 	overflow: hidden;
 }
-
-@media screen and (min-width: 700px) {
-	.header__container {
-		flex-direction: row;
-	}
-	.header__list {
-		flex-direction: row;
-	}
-	.header__open-menu {
-		display: none;
-	}
-	.header__open-menu-input:checked + .header__nav {
-		height: auto;
-	}
-	.header__nav {
-		height: auto;
-	}
-}
-
 .header__logo{
 	font-weight: 400;
 	color: white;
@@ -92,7 +73,7 @@ body{
 }
 .home{
 	background-image: url('images/background-image.jpg');
-	height: 660px;
+	height: 100vh;
 	background-size: cover;
 
 }
@@ -226,4 +207,20 @@ body{
 		width:90%;
 	}
 }
-
+@media screen and (min-width: 700px) {
+	.header__container {
+		flex-direction: row;
+	}
+	.header__list {
+		flex-direction: row;
+	}
+	.header__open-menu {
+		display: none;
+	}
+	.header__open-menu-input:checked + .header__nav {
+		height: auto;
+	}
+	.header__nav {
+		height: auto;
+	}
+}
