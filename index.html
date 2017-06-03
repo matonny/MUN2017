@@ -5,74 +5,74 @@
 	<meta charset="utf-8">
 	<link href='style.css' rel='stylesheet'/>
 	<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css' rel='stylesheet'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,600" rel="stylesheet">
 	<title>GDNMUN</title>
 </head>
 <body>
-	<header class='header'>
-		<div class='header__container'>
-			<h1 class='header__logo'>
-				<a href='#home' class='logo__link'>GDNMUN</a>
-			</h1>
-            <input id="open-menu-input" type="checkbox" class="header__open-menu-input js-menu-checkbox">
-			<nav class='header__nav'>
-				<ul class='header__list'>
-					<li class='header__list__item'>
-						<a href='#home' class='header__list__link'>
-							Home
-						</a>
-					</li>
-					<li class='header__list__item'>
-						<a href='#about' class='header__list__link'>
-							About us
-						</a>
-					</li>
-					<li class='header__list__item'>
-						<a href='#know' class='header__list__link'>
-							Get to know us
-						</a>
-					</li>
-					<li class='header__list__item'>
-						<a href='#conference' class='header__list__link'>
-							Conference 2017
-						</a>
-					</li>
-					<li class='header__list__item'>
-						<a href='#join' class='header__list__link'>
-							Join us
-						</a>
-					</li>
-					<li class='header__list__item'>
-						<a href='#' class='header__list__link'>
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
-            <label for="open-menu-input" class="header__open-menu">Open menu</label>
-		</div>
-	</header>
-	<section class ='main' id='home'>
-		<div class='c-main'>
-			<div class='c-main__content'>
-				<h1 class='c-main__title'>
-					Gdańsk Model United Nations 2017
-				</h1>
-				<h2 class='c-main__subtitle'>
-					Road to freedom
-				</h2>
-			</div>
-		</div>
-	</section>
+	<section class ='main'>
+    	<header class='header'>
+    		<div class='header__container'>
+    			<h1 class='header__logo'>
+    				<a href='#home' class='logo__link'>GDNMUN</a>
+    			</h1>
+                <input id="open-menu-input" type="checkbox" class="header__open-menu-input js-menu-checkbox">
+    			<nav class='header__nav'>
+    				<ul class='header__list'>
+    					<li class='header__list__item'>
+    						<a href='#home' class='header__list__link'>
+    							Home
+    						</a>
+    					</li>
+    					<li class='header__list__item'>
+    						<a href='#about' class='header__list__link'>
+    							About us
+    						</a>
+    					</li>
+    					<li class='header__list__item'>
+    						<a href='#know' class='header__list__link'>
+    							Get to know us
+    						</a>
+    					</li>
+    					<li class='header__list__item'>
+    						<a href='#conference' class='header__list__link'>
+    							Conference 2017
+    						</a>
+    					</li>
+    					<li class='header__list__item'>
+    						<a href='#join' class='header__list__link'>
+    							Join us
+    						</a>
+    					</li>
+    					<li class='header__list__item'>
+    						<a href='#' class='header__list__link'>
+    							Contact
+    						</a>
+    					</li>
+    				</ul>
+    			</nav>
+                <label for="open-menu-input" class="header__open-menu">Open menu</label>
+    		</div>
+    	</header>
+    	<section class='home' id='home'>
+    		<div class='home__container'>
+    			<div class='home__content'>
+    				<h1 class='home__title'>
+    					Gdańsk Model United Nations 2017
+    				</h1>
+    				<h2 class='home__subtitle'>
+    					Road to freedom
+    				</h2>
+    			</div>
+    		</div>
+    	</section>
+    </section>
 	<section class='content'>
-		<article class='about' id='about'>
-			<div class='about'>
-				<h2 class='about__title'>
+		<section class='section' id='about'>
+				<h2 class='section__title'>
 					About us
 				</h2>
-				<div class='about__features'>
-					<div class='about__item'>
+				<div class='section__features'>
+					<div class='section__item'>
 						<i class="fa fa-question-circle fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							What is GDNMUN?
@@ -81,7 +81,7 @@
 							Gdańsk Model United Nations (GDNMUN) is a conference arranged...
 						</p>
 					</div>
-					<div class='about__item'>
+					<div class='section__item'>
 						<i class="fa fa-calendar-check-o fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							When?
@@ -91,7 +91,7 @@
 							October 2017
 						</p>
 					</div>
-					<div class='about__item'>
+					<div class='section__item'>
 						<i class="fa fa-map-marker fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							Where?
@@ -101,15 +101,13 @@
 						</p>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class='about' id='know'>
-			<div class='about'>
-				<h2 class='about__title'>
+		</section>
+		<section class='section' id='know'>
+				<h2 class='section__title'>
 					Get to know us
 				</h2>
-				<div class='about__features'>
-					<div class='about__item'>
+				<div class='section__features'>
+					<div class='section__item'>
 						<i class="fa fa-users fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							Secretariat
@@ -118,7 +116,7 @@
 							Information soon
 						</p>
 					</div>
-					<div class='about__item'>
+					<div class='section__item'>
 						<i class="fa fa-money fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							Sponsors
@@ -127,7 +125,7 @@
 							Information soon
 						</p>
 					</div>
-					<div class='about__item'>
+					<div class='section__item'>
 						<i class="fa fa-newspaper-o fa-3x icon" aria-hidden="true"></i>
 						<h3 class='item__title'>
 							Media
@@ -137,15 +135,13 @@
 						</p>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class='about' id='conference'>
-			<div class='about'>
-				<h2 class='about__title'>
+		</section>
+		<section class='section' id='conference'>
+				<h2 class='section__title'>
 					Conference 2017
 				</h2>
-				<div class='about__features'>
-					<div class='about__item smaller__item'>
+				<div class='section__features'>
+					<div class='section__item smaller__item'>
 						<i class="fa fa-3x fa-list-ul icon" aria-hidden='true'></i>
 						<h3 class='item__title'>
 							Comittees
@@ -154,7 +150,7 @@
 							Information soon
 						</p>
 					</div>
-					<div class='about__item smaller__item'>
+					<div class='section__item smaller__item'>
 						<i class="fa fa-3x fa-calendar icon" aria-hidden='true'></i>
 						<h3 class='item__title'>
 							Schedule
@@ -163,7 +159,7 @@
 							Information soon
 						</p>
 					</div>
-					<div class='about__item smaller__item'>
+					<div class='section__item smaller__item'>
 						<i class="fa fa-3x fa-file-text icon" aria-hidden='true'></i>
 						<h3 class='item__title'>
 							Documents
@@ -172,7 +168,7 @@
 							Information soon
 						</p>
 					</div>
-					<div class='about__item smaller__item'>
+					<div class='section__item smaller__item'>
 						<i class="fa fa-3x fa-money icon" aria-hidden='true'></i>
 						<h3 class='item__title'>
 							Fees
@@ -182,22 +178,20 @@
 						</p>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class='join' id='join'>
+		</section>
+		<section class='join' id='join'>
 			<h2 class='join__title'>
 				Join us
 			</h2>
 			<a class='join__link'>
-				<button class='join__button'>
-					Register now
-				</button>
+                Register now
 			</a>
-		</article>
+		</section>
 	</section>
 	<footer class='footer'>
 
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/93f552f4ab.js"></script>
 	<script src='javascript.js'></script>
 </body>

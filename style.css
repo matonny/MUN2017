@@ -1,3 +1,6 @@
+body{
+	font-family: 'Rajdhani', sans-serif;
+}
 .header{
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -61,7 +64,6 @@
 }
 
 .header__logo{
-	font-family: 'Rajdhani', sans-serif;
 	font-weight: 400;
 	color: white;
 	font-size: 22px;
@@ -78,7 +80,6 @@
 .header__list__link{
 	color: white;
 	text-decoration: none;
-	font-family: 'Rajdhani', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -89,61 +90,39 @@
 .header__list__link:hover{
 	color:#761735;
 }
-.main{
+.home{
 	background-image: url('images/background-image.jpg');
 	height: 660px;
 	background-size: cover;
 
 }
-.c-main{
+.home__container{
 	height: 100%;
 	background: rgba(0,0,0, 0.4);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.c-main__content{
+.home__content{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
 }
-.c-main__title{
+.home__title{
 	color:white;
-	font-family: 'Rajdhani', sans-serif;
 	font-weight: 600;
 	font-size: 3rem;
 	text-transform: uppercase;
 	padding:20px;
 }
-.c-main__subtitle{
+.home__subtitle{
 	color: white;
-	font-family: 'Rajdhani', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1.8rem;
-	line-height: 2rem;
-}
-.c-main__button{
-	width:120px;
-	height: 40px;
-	border: 1px solid #761735;
-	background-color: #761735;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-	font-family: 'Rajdhani', sans-serif;
-	transition: 0.3s;
-	cursor: pointer;
-}
-.c-main__button:hover{
-	background-color: rgba(0,0,0, 0.0);
-	border:1px solid white;
-}
-.c-main__button:focus{
-	outline: none;
+	line-height: 2;
 }
 .content{
 	display: flex;
@@ -151,27 +130,26 @@
 	align-items: center;
 	justify-content: center;
 }
-.about{
+.section{
 	max-width: 1100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.about__title{
-	font-family: 'Rajdhani', sans-serif;
+.section__title{
 	font-size: 32px;
 	font-weight: 300;
 	color: #761735;
 	text-transform: uppercase;
 	margin: 100px 0;
 }
-.about__features{
+.section__features{
 	display: flex;
 	max-width: 1100px;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-.about__item{
+.section__item{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -184,15 +162,13 @@
 	margin:15px;
 }
 .item__title{
-	font-family: 'Rajdhani', sans-serif;
 	color: #761735;
 	text-transform: uppercase;
 }
 .item__description{
 	text-align: center;
-	font-family: 'Rajdhani', sans-serif;
 	font-size: 16px;
-	line-height: 1.6em;
+	line-height: 1.6;
 	color: #191919;
 	margin:0;
 }
@@ -215,11 +191,13 @@
 	color:#761735;
 	font-size: 2rem;
 	margin:100px 0;
-	font-family: 'Rajdhani', sans-serif;
 	font-weight:300;
 	text-transform: uppercase;
 }
-.join__button{
+.join__link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width:300px;
 	height: 70px;
 	border: 1px solid white;
@@ -228,16 +206,15 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.5rem;
-	font-family: 'Rajdhani', sans-serif;
 	transition: 0.3s;
 	cursor: pointer;
 }
-.join__button:hover{
+.join__link:hover{
 	background-color: rgba(0,0,0, 0.0);
 	border:1px solid #761735;
 	color:#761735;
 }
-.join__button:focus{
+.join__link:focus{
 	outline: none;
 }
 @media (max-width: 750px){
@@ -245,7 +222,7 @@
 		width:90%;
 		height: 225px;
 	}
-	.about__item{
+	.section__item{
 		width:90%;
 	}
 }
