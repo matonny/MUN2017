@@ -225,38 +225,47 @@ body{
 	text-transform: uppercase;
 	font-size: 30px;
 	margin-top:20px;
+	font-weight: 400;
+	text-align: center;
 }
-.contact__list__item .contact__icon{
+.contact__mail{
+	display: flex;
+	align-items: center;
+}
+.contact__list__item .contact__icon, .contact__mail .contact__icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 32px;
 	height: 32px;
 	margin-right: 10px;
+	color:white;
 }
-.contact__webicon{
-	margin-right: 10px;
-}
+
 .contact__map{
 	width:330px;
 	height: 200px;
 	z-index: 1;
+	margin:10px;
 }
 .contact__description{
 	color:white;
+	text-align: justify;
 }
 .contact__list{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	padding:0;
+	margin:0;
 }
+
 .contact__list__item{
 	display: flex;
 	align-items: center;
 	margin: 10px 0
 }
-.contact__item{
+.contact__item, .contact__mailaddress{
 	color:white;
 	text-decoration: none;
 }
