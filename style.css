@@ -197,6 +197,48 @@ body{
 }
 .join__link:focus{
 	outline: none;
+	box-shadow: 1px 1px 1px 1px black;
+}
+.contact{
+	background-image: url('images/footer-background.jpg');
+	background-size: cover;
+}
+.contact__container{
+	padding:100px 0;
+	max-width: 1000%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact__set{
+	display: flex;
+	align-items: center;
+	margin:10px 0; 
+	justify-content: flex-start;
+}
+.contact__set .small-icon{
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact__side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.contact__link{
+	font-size: 32px;
+	line-height: 32px;
+	color:white;
+	text-decoration: none;
+
+}
+.contact__map{
+	width: 400px;
+	height: 300px;
 }
 @media (max-width: 750px){
 	.smaller__item{
