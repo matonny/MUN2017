@@ -11,7 +11,7 @@
     <meta property='description' content='Gdańsk Model United Nations (GDNMUN) is a conference arranged by the students of IB World School No. 1309. More than 200 delegates from around the globe will arrive in Gdańsk, and represent states different from their native ones. The participants will try their hand at debating over exigent matters, that our world came to face - in several discrete committees.'/>
     <meta property='og:locale' content="en_GB"/>
     <meta property='og:type' content="website"/>
-    <meta property='og:image' content='https://matonny.github.io/MUN2017/images/fb-background.png'/>       
+    <meta property='og:image' content='https://matonny.github.io/MUN2017/images/fb-background.png'/>
     <meta property='og:title' content="Gdansk Model United Nations 2017"/>
     <meta property='og:description' content="Gdańsk Model United Nations (GDNMUN) is a conference arranged by the students of IB World School No. 1309. More than 200 delegates from around the globe will arrive in Gdańsk, and represent states different from their native ones. The participants will try their hand at debating over exigent matters, that our world came to face - in several discrete committees."/>
     <meta property='og:url' content="https://matonny.github.io/MUN2017/"/>
@@ -24,8 +24,14 @@
     			<h1 class='header__logo'>
     				<a href='#home' class='logo__link'>GDNMUN</a>
     			</h1>
-                <input id="open-menu-input" type="checkbox" class="header__open-menu-input js-menu-checkbox">
-    			<nav class='header__nav'>
+                <button class="header__open-menu js-open-menu"
+                        type="button"
+                        id="open-menu-button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="navigation-menu"
+                        aria-label="Open menu"></button>
+    			<nav class='header__nav' id="navigation-menu">
     				<ul class='header__list'>
     					<li class='header__list__item'>
     						<a href='#home' class='header__list__link'>
@@ -59,7 +65,6 @@
     					</li>
     				</ul>
     			</nav>
-                <label for="open-menu-input" class="header__open-menu">Open menu</label>
     		</div>
     	</header>
     	<section class='home' id='home'>
@@ -197,50 +202,49 @@
                 </section>
 		</section>
 	   <section class='contact' id='contact'>
-            <div class='contact__filtr'>
-            <div class='contact__container'>
-                <div class='contact__side'>
-                    <h2 class='contact__title'>
-                        Find us on
-                    </h2>
-                    <ul class='contact__list'>
-                        <li class='contact__list__item'>
-                            <span class="fa fa-facebook-square contact__icon fa-2x" aria-hidden="true"></span>
-                            <a href='https://www.facebook.com/gdnmun/' class='contact__item'>Facebook</a>
-                        </li>
-                        <li class='contact__list__item'>
-                            <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
-                            <a href='https://mymun.net/' class='contact__item'>myMUN</a>
-                        </li>
-                        <li class='contact__list__item'>
-                            <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
-                            <a href='http://topolowka.pl/' class='contact__item'>Topolówka</a>
-                        </li>
-                        <li class='contact__list__item'>
-                            <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
-                            <a h ref='http://www.gdansk.pl/' class='contact__item'>Gdańsk.pl</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class='contact__side'>
-                    <h2 class='contact__title'>
-                        Contact us
-                    </h2>
-                    <div class='contact__mail'>
-                        <span class="fa fa-envelope contact__icon fa-2x" aria-hidden="true"></span>
-                        <p class='contact__mailaddress'> office@gdnmun.pl </p>
+            <div class='contact__filter'>
+                <div class='contact__container'>
+                    <div class='contact__side'>
+                        <h2 class='contact__title'>
+                            Find us on
+                        </h2>
+                        <ul class='contact__list'>
+                            <li class='contact__list__item'>
+                                <span class="fa fa-facebook-square contact__icon fa-2x" aria-hidden="true"></span>
+                                <a href='https://www.facebook.com/gdnmun/' class='contact__item'>Facebook</a>
+                            </li>
+                            <li class='contact__list__item'>
+                                <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
+                                <a href='https://mymun.net/' class='contact__item'>myMUN</a>
+                            </li>
+                            <li class='contact__list__item'>
+                                <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
+                                <a href='http://topolowka.pl/' class='contact__item'>Topolówka</a>
+                            </li>
+                            <li class='contact__list__item'>
+                                <span class="fa fa-globe contact__icon fa-2x" aria-hidden="true"></span>
+                                <a href='http://www.gdansk.pl/' class='contact__item'>Gdańsk.pl</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='contact__side'>
+                        <h2 class='contact__title'>
+                            Contact us
+                        </h2>
+                        <div class='contact__mail'>
+                            <span class="fa fa-envelope contact__icon fa-2x" aria-hidden="true"></span>
+                            <p class='contact__mailaddress'> office@gdnmun.pl </p>
+                        </div>
+                    </div>
+                    <div class='contact__side'>
+                        <h2 class='contact__title'>
+                            Getting around the city
+                        </h2>
+                        <div class='contact__map' id='map'>
+
+                        </div>
                     </div>
                 </div>
-                <div class='contact__side'>
-                    <h2 class='contact__title'>
-                        Getting around the city
-                    </h2>          
-                    <div class='contact__map' id='map'>
-
-                    </div>
-                </div>
-
-            </div>
             </div>
        </section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
