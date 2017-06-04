@@ -8,6 +8,7 @@ body{
 	padding: 0 20px;
 	transition: 0.2s;
 	box-sizing: border-box;
+	z-index: 2;
 }
 .header__container{
 	display: flex;
@@ -202,48 +203,62 @@ body{
 .contact{
 	background-image: url('images/footer-background.jpg');
 	background-size: cover;
+	width: 100%;
+}
+.contact__filtr{
+	background-color: rgba(0,0,0, 0.5);
 }
 .contact__container{
-	margin: 0 auto;
-	padding:100px 0;
+	display: flex;
 	max-width: 1000px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.contact__set{
-	display: flex;
-	align-items: center;
-	margin:10px 0; 
-	justify-content: flex-start;
-}
-.contact__row{
-	display:flex;
-}
-.contact__set .small-icon{
-	width: 32px;
-	height: 32px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	justify-content: space-around;
 }
 .contact__side{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-
+	max-width: 330px;
 }
-.contact__link{
-	font-size: 32px;
-	line-height: 32px;
+.contact__title{
 	color:white;
-	text-decoration: none;
-
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-top:20px;
+}
+.contact__list__item .contact__icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+}
+.contact__webicon{
+	margin-right: 10px;
 }
 .contact__map{
-	width: 90%;
-	height: 300px;
+	width:330px;
+	height: 200px;
+	z-index: 1;
+}
+.contact__description{
+	color:white;
+}
+.contact__list{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding:0;
+}
+.contact__list__item{
+	display: flex;
+	align-items: center;
+	margin: 10px 0
+}
+.contact__item{
+	color:white;
+	text-decoration: none;
 }
 @media (max-width: 750px){
 	.smaller__item{
@@ -252,6 +267,17 @@ body{
 	}
 	.section__item{
 		width:90%;
+	}
+	.contact__container{
+		flex-direction: column;
+		margin:0 auto;
+	}
+	.contact__side{
+		margin:0 auto;
+		align-items: center;
+	}
+	.contact__map{
+		width:280px;
 	}
 }
 @media screen and (min-width: 700px) {
