@@ -141,6 +141,13 @@ body{
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+.section__link{
+	transition: 0.2s;
+	text-decoration: none;
+}
+.section__link:hover .icon{
+	color:#761735;
+}
 .section__item{
 	display: flex;
 	flex-direction: column;
@@ -166,6 +173,8 @@ body{
 }
 .icon{
 	margin:10px;
+	color:black;
+	transition: 0.3s;
 }
 .smaller__item{
 	width:220px;
