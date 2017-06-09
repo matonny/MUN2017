@@ -35,6 +35,7 @@ $openMenuButton.click(function () {
 
 $navigationLinks.click(closeMenu);
 
+
 function initMap() {
     var uluru = {lat: 54.361385, lng: 18.649726};
     var map = new google.maps.Map(document.getElementById('map'), {

@@ -130,7 +130,7 @@ body{
 }
 .section__title{
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 400;
     color: #761735;
     text-transform: uppercase;
     margin: 100px 0;
@@ -192,7 +192,7 @@ body{
     color:#761735;
     font-size: 2rem;
     margin:100px 0;
-    font-weight:300;
+    font-weight:400;
     text-transform: uppercase;
 }
 .join__link{
@@ -293,6 +293,10 @@ body{
     color:white;
     width:100%;
     text-align: center;
+}
+.footer__signature{
+	margin:0;
+	padding:10px 0;
 }
 @media (max-width: 750px){
     .smaller__item{
