@@ -1,5 +1,6 @@
 body{
     font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
 }
 .header{
     width: 100%;
@@ -173,7 +174,6 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    max-height: 300px;
     max-width: 500px;
     margin:0 20px;
 }
@@ -195,6 +195,14 @@ body{
 .footer__signature{
     margin:0;
     padding:10px 0;
+}
+.committees{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.committees__area{
+    box-sizing: border-box;
+    padding:10px;
 }
 @media screen and (min-width: 700px) {
     .header__container {
