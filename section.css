@@ -92,6 +92,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    box-sizing: border-box;
 }
 .breadcrumbs__container{
     margin:0 auto;
@@ -103,12 +104,13 @@ body{
     justify-content: flex-end;
 }
 .breadcrumbs__title{
+    margin:0 0 0 10px;
     font-size: 50px;
     text-transform: uppercase;
     color: white;
 }
 .breadcrumbs__list{
-    margin:0 5px 5px 5px;
+    margin:0 10px 10px 10px;
     flex-wrap: wrap;
     display: flex;
     list-style-type: none;
@@ -120,6 +122,7 @@ body{
     color: white;
 }
 .breadcrumbs__item{
+    margin-top:5px;
     display: flex;
     align-items: center;
     height: 20px;
@@ -191,6 +194,10 @@ body{
     color:white;
     width:100%;
     text-align: center;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer__signature{
     margin:0;
@@ -200,9 +207,47 @@ body{
     max-width: 1000px;
     margin:0 auto;
 }
+.commitees__list{
+    list-style-type: none;
+    padding:0;
+}
 .commitees__area{
     box-sizing: border-box;
     padding:10px;
+}
+.commitees__area__title{
+    margin:0;
+    color:black;
+}
+.where, .what, .fees{
+    max-width: 1000px;
+    margin:0 auto;
+    min-height: 55vh;
+    padding:0;
+}
+.where__title{
+    padding:40px 10px 10px 10px;
+    margin:0;
+}
+.where__description, .what__description, .fees__description{
+    padding:10px;
+    margin:0;
+}
+.fees__link{
+    color: #761735;
+    text-decoration: none;
+}
+.fees__table{
+    margin-left:10px;
+    padding:10px;
+    border-collapse: collapse;
+}
+.fees__item{
+    padding: 10px;
+    text-align: left;
+}
+.fees__table, .fees__row, .fees__item{
+    border:1px solid #761735;
 }
 @media screen and (min-width: 700px) {
     .header__container {
