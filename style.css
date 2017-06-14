@@ -108,6 +108,10 @@ body{
     text-transform: uppercase;
     padding:20px;
 }
+.home__subtitle a{
+	color:white;
+	text-decoration: none;
+}
 .home__subtitle{
     color: white;
     font-weight: normal;
