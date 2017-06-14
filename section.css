@@ -219,6 +219,10 @@ body{
     margin:0;
     color:black;
 }
+.commitees__area__topic--highlight{
+    color:#761735;
+    font-weight: bold;
+}
 .where, .what, .fees{
     max-width: 1000px;
     margin:0 auto;
